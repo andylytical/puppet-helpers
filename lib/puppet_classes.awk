@@ -2,7 +2,7 @@ BEGIN {
     found_class=0
 }
 
-/^ *class [^(]+ \(/ {
+/^ *class [^(]+ ?\(/ {
     in_class = 1
 }
 in_class == 1 {
