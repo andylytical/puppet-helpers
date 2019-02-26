@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+AWK_FN=~/lib/puppet_classes.awk
+
+# use file(s) from cmdline
+files=("${@}")
+# if nothing on cmdline, find files in (and below) current dir
+[[ "${#files[*]}" -lt 1 ]] && \
+    files=( $( find . -name '*.pp' ) )
+
+for f in "${files[@]}"; do
+    # Extract class definition from pp file
+    awk -f "$AWK_FN" "$f"
+done
