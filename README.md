@@ -24,4 +24,8 @@ Helper scripts for puppet development
 
 ### repo_status
 * `repo_status`
-Sample output:
+
+![Sample output](repo_status.png)
+
+# See also
+* [branch-merge-status](https://github.com/ncsa/branch-merge-status)
