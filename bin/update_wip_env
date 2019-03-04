@@ -1,5 +1,11 @@
 #!/bin/bash
 
+### Copy contents of working directories (for each of multiple repos)
+### into a puppet environment for testing live changes without
+### commit-push-deploy cycle
+### Environment is named "wip_<USERNAME>" where <USERNAME> is passed
+### as a parameter on the cmdline
+
 set -x 
 
 PUPPET=/opt/puppetlabs/bin/puppet

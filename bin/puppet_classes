@@ -1,4 +1,8 @@
-#!/usr/bin/bash
+#!/bin/bash
+
+### List all classes and parameters for each class
+### in specified puppet files
+### or all puppet files found in and below the current directory
 
 AWK_FN=~/lib/puppet_classes.awk
 
