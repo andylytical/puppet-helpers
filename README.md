@@ -26,7 +26,7 @@ for testing live changes without commit-push-deploy cycle.
 Note: `<USERNAME>` must be passed as a parameter on the cmdline
 * root@puppet-master# `update_wip_env <USERNAME>`
 
-### checkout
+### repo_checkout
 Checkout the specified branch in each repo (`control`, `hiera`, `legacy`)
 
 For each repo without a matching branch, checkout "production" instead.

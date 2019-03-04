@@ -1,7 +1,7 @@
 #!/bin/bash
 
-### Checkout a specified branch in multiple repos
-### or "production" if there is no matching branch in a repo
+### Checkout the specified branch in each repo (control, hiera, legacy)
+### For each repo without a matching branch, checkout "production" instead.
 
 REPONAMES=( control hiera legacy )
 PUPDIR="$HOME/puppet"
