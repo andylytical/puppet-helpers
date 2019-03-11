@@ -18,25 +18,7 @@ or all puppet files found in and below the current directory
 * `puppet_classes`
 * `puppet_classes filename.pp ...`
 
-### update_wip_env
-Create the puppet environment `/etc/puppetlabs/code/environments/wip_<USERNAME>`
-using contents of current working directories for each repo (`control`, `hiera`, `legacy`)
-for testing live changes without commit-push-deploy cycle.
 
-Note: `<USERNAME>` must be passed as a parameter on the cmdline
-* root@puppet-master# `update_wip_env <USERNAME>`
-
-### repo_checkout
-Checkout the specified branch in each repo (`control`, `hiera`, `legacy`)
-
-For each repo without a matching branch, checkout "production" instead.
-* `checkout <TOPIC_BRANCH>`
-
-### repo_status
-Show current branch for each repo (`control`, `hiera`, `legacy`).
-* `repo_status`
-
-![Sample output](repo_status.png)
 
 # See also
-* [branch-merge-status](https://github.com/ncsa/branch-merge-status)
+* [puppet-dev](https://github.com/ncsa/puppet-dev)
